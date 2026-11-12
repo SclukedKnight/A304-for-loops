@@ -23,3 +23,14 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+i = 1
+total = 0
+
+while 1:
+    total = total - round(float(input(f"Enter total purchases for month {i}: ")), 2) 
+    total = total + round(float(input(f"Enter total payments for month {i}: ")), 2)
+    if total < 0:
+        total = round(total * 1.02, 2)
+
+    print(f"Yout closing balance is {total} for month {i}")
+    i = i + 1

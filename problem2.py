@@ -37,3 +37,10 @@ example:
 Enter a number: -4
 Invalid input
 """
+
+x = int(input("input number to factorial: "))
+total = 1
+for i in range(x):
+    total = total * (i + 1)
+    print(total)
+print(total)
